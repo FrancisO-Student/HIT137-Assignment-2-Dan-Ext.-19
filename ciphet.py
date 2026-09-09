@@ -38,12 +38,12 @@ def decrypt_char(char, shift1, shift2):
             return chr(ord('a') + new_position)
         else:
             position = ord(char) - ord('o')
-            new_Position = (position + (shift1 + shift2)) % 12
+            new_position = (position + (shift1 + shift2)) % 12
             return chr(ord('o') + new_position)
 
     elif char.isupper():
         if char <= 'M':
-            position - ord(char) - ord('A')
+            position = ord(char) - ord('A')
             new_position = (position + shift1) % 13
             return chr(ord('A') + new_position)
         else:
@@ -64,7 +64,7 @@ def encrypt_text(text, shift1, shift2):
     if len(text) <= 1:
         if len(text) == 0:
             return ""
-        return decrypt_char(text[0], shift1, shift2)
+        return encrypt_char(text[0], shift1, shift2)
 
     middle = len(text) // 2
     left_half = text[:middle]
