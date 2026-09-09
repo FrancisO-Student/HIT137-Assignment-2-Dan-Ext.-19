@@ -66,7 +66,7 @@ def encrypt_text(text, shift1, shift2):
             return ""
         return decrypt_char(text[0], shift1, shift2)
 
-    middle - len(text) // 2
+    middle = len(text) // 2
     left_half = text[:middle]
     right_half = text[middle:]
 
@@ -109,7 +109,7 @@ def decrypt_file(shift1: int, shift2: int, input_path: str, output_path: str) ->
     text = input_file.read()
     input_file.close()
 
-    decrypted_text = decrypt_text(text, shift1, shift 2)
+    decrypted_text = decrypt_text(text, shift1, shift2)
 
     output_file = open(output_path, "w")
     output_file.write(decrypted_text)
