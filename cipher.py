@@ -1,5 +1,5 @@
 def encrypt_char(char, shift1, shift2):
-    if char.islower()
+    if char.islower():
         if char <= 'n':
           position = ord(char) - ord('a')
           new_position = (position + shift1 * shift2) % 14
@@ -82,7 +82,7 @@ def decrypt_text(text, shift1, shift2):
             return ""
         return decrypt_char(text[0], shift1, shift2)
 
-    middle - len(text) // 2
+    middle = len(text) // 2
     left_half = text[:middle]
     right_half = text[middle:]
 
@@ -134,6 +134,8 @@ def verify_files(original_path: str, decrypted_path: str) -> bool:
 
 def get_non_negative_num(prompt):
     while True
+        number = int(input(prompt))
+
         if number < 0:
             print("That's negative. Please enter 0 or a positive whole number.")
             continue
