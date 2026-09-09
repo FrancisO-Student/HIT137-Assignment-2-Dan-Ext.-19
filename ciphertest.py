@@ -133,7 +133,7 @@ def verify_files(original_path: str, decrypted_path: str) -> bool:
         return False
 
 def get_non_negative_num(prompt):
-    while True
+    while True:
         number = int(input(prompt))
 
         if number < 0:
