@@ -10,7 +10,7 @@ def encrypt_char(char, shift1, shift2):
           new_position = (position - (shift1 + shift2)) % 12
           return chr(ord('o') + new_position)
 
-    elif  char.isupper():
+    elif char.isupper():
         if char <= 'M':
           position = ord(char) - ord('A')
           new_position = (position - shift1) % 13
