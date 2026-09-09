@@ -137,7 +137,7 @@ def get_non_negative_num(prompt):
         number = int(input(prompt))
 
         if number < 0:
-            print("That's negative. Please enter 0 or a positive whole number.")
+            print("That's a negative number. Please enter a non-negative whole number.")
             continue
 
         return number
