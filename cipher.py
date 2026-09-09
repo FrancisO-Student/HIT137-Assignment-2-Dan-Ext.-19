@@ -144,8 +144,8 @@ def get_non_negative_num(prompt):
 
 
 if __name__ == "__main__":
-    shift1 = int(input("Enter shift1 ( a non-negative whole number): "))
-    shift2 = int(input("Enter shift2 (another non-negative whole number): "))
+    shift1 = get_non_negative_num("Enter shift1 ( a non-negative whole number): ")
+    shift2 = get_non_negative_num("Enter shift2 (another non-negative whole number): ")
 
     encrypt_file(shift1, shift2, "raw_text.txt", "encrypted_text.txt")
     decrypt_file(shift1, shift2, "encrypted_text.txt", "decrypted_text.txt")
