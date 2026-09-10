@@ -1,3 +1,14 @@
+# Assessment 2
+
+# Group Name: [DAN/EXT 19]
+
+# Group Members:
+# [FAHD ADEGBOYE] - [S402924]
+# [EMMAN DE GUZMAN] - [S379393]
+# [FRANCIS OYBENES] - [S404978]
+
+
+# Question 1
 def encrypt_char(char, shift1, shift2):
     if char.islower():
         if char <= 'n':
